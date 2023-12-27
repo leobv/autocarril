@@ -1,0 +1,40 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #343333;
+}
+
+.button {
+  display: flex;
+  align-items:flex-end;
+  color: aliceblue;
+  justify-content: center;
+  background-color: #636363;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.social-link .faInstagram {
+  margin-right: 1.5rem;
+}
+
+.social-link .faWhatsapp {
+      margin-right: 1.5rem;
+  }
+
+/* Oculta el menú en pantallas de menos de 600px de ancho */
+@media (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
+}

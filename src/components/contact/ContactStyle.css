@@ -1,0 +1,27 @@
+.contact-container {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  
+  .location {
+    margin-top: 2rem;
+  }
+  
+  .location iframe {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: 300px;
+    border: none;
+  }
