@@ -5,11 +5,13 @@ import autocarril from '../../images/autocarril1.png';
 function About() {
   return (
     <div className="about-container">
-      <h2>Sobre nosotros</h2>
+      <div className="about-title">
+      <h2>Conocenos</h2>
+      <img src={autocarril} alt="Tienda" />
+      </div>
       <div className="about-content">
-          <img src={autocarril} alt="Tienda" />
-          <p>Durante 30 años, AutoCarril Móviles se ha esforzado por brindarles a nuestros clientes el mejor servicio de calidad posible.
-          La satisfacción del cliente es nuestra máxima prioridad, y estamos preparados para orientarlo y asistirlo a elegir su vehículo ideal.
+          <p>AutoCarril Móviles es una empresa con más de 30 años de experiencia en la venta de vehículos. Nuestro compromiso con la satisfacción del cliente es nuestro valor fundamental, y estamos siempre dispuestos a ayudarte a encontrar el vehículo ideal para tus necesidades.
+            consegui el asesoramiento que necesitas para tomar la mejor decisión. 
           </p>
       </div>
     </div>

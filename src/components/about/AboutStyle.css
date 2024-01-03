@@ -1,32 +1,50 @@
 .about-container {
-  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-title, .about-content {
+  flex: 1;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: left;
+  animation: slideInFromLeft 2s ease-out;
+}
+
+.about-title h2 {
+  align-self: start;
+  font-size: 2rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-title img {
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .about-content {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
+  margin-top: 2rem;
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+  animation: slideInFromRight 2s ease-out;
 }
 
 .about-content p {
-  flex: 1;
-  font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
-  line-height: 1.6;
-  text-align: justify; /* Justifica el texto */
-}
-
-.about-content img {
-  max-width: 30%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center; /* Centra el título */
-  margin-bottom: 1rem; /* Añade un margen debajo del título */
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -34,22 +52,30 @@ h2 {
   100% { opacity: 1; }
 }
 
-.about-content p {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.about-content img {
-  animation: fadeIn 2s ease-in-out;
-}
-
-@media (min-width: 768px) {
-  .about-content {
-    flex-direction: row;
-    text-align: left;
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-.dark {
-  background-color: #333;
-  color: #fff;
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
 }
