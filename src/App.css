@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 100%;
+  /* Full width for background bands */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Common Section Styles */
+section {
+  padding: 8rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+section h2,
+.section-title {
+  font-family: var(--font-main);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  color: var(--text-main);
+}
+
+.dark-mode-wrapper section h2,
+.dark-mode-wrapper .section-title {
+  color: var(--text-dark);
+}
+
+section>div {
+  max-width: 1200px;
+  /* Inner content width */
+  width: 100%;
+}
+
+/* Seamless Backgrounds - Fusion */
+.section-wrapper {
+  background-color: transparent;
+  /* Let body background show through */
+}
+
+/* Optional: Slight divider if needed, but keeping it clean for fusion */
+
+/* Removing specific container styles to unify look */
+.navbar,
+.about-container,
+.carousel-container,
+.contact-container {
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+/* Dark Mode Global */
+.dark-mode-wrapper {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+.dark-mode-wrapper .navbar,
+.dark-mode-wrapper .about-container,
+.dark-mode-wrapper .carousel-container,
+.dark-mode-wrapper .contact-container {
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+
+
+
+  .about-container {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content p {
+    flex: 1;
+    font-size: 1.2rem;
+    /* Aumenta el tamaño de la fuente */
+    line-height: 1.6;
+    text-align: justify;
+    /* Justifica el texto */
+  }
+
+  .about-content img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    /* Centra el título */
+    margin-bottom: 1rem;
+    /* Añade un margen debajo del título */
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .about-content p {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .about-content img {
+    animation: fadeIn 2s ease -in-out;
+  }
+
+}

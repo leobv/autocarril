@@ -1,0 +1,100 @@
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .about-wrapper {
+    grid-template-columns: 1.2fr 1fr;
+    /* Text wider than Image */
+  }
+}
+
+.about-subtitle {
+  font-family: var(--font-main);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.about-title-main {
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  font-weight: 800;
+  /* Extra bold for branding */
+  line-height: 1.2;
+  margin: 0 0 2rem 0;
+  color: var(--text-main);
+}
+
+.dark-mode-wrapper .about-title-main {
+  color: var(--text-dark);
+}
+
+.about-description p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  /* Relaxed reading */
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.dark-mode-wrapper .about-description p {
+  color: #a0aec0;
+}
+
+.about-signature {
+  margin-top: 3rem;
+  font-family: 'Great Vibes', cursive;
+  /* Optional script font or just styling */
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Image Styling */
+.about-image-column {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-warm);
+  width: 100%;
+  max-width: 500px;
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.image-frame:hover img {
+  transform: scale(1.03);
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .about-wrapper {
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .about-title-main {
+    font-size: 2rem;
+  }
+}

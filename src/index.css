@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Elegant Warm Palette - Premium Refined */
+  --primary-color: #A67C52;
+  /* Bronce / Cuero */
+  --primary-hover: #8D6643;
+  --accent-color: #D4AF37;
+  /* Dorado sutil */
+
+  /* Light Mode (Warm Luxury) */
+  --bg-light: #FAF9F6;
+  /* Alabastro / Off-White cálido */
+  --bg-secondary: #EFEFE9;
+  /* Beige muy suave */
+  --text-main: #1A1918;
+  /* Negro casi puro para mejor contraste */
+  --text-muted: #595955;
+  --card-light: #FFFFFF;
+  --glass-light: rgba(250, 249, 246, 0.7);
+  --glass-border-light: rgba(255, 255, 255, 0.4);
+
+  /* Dark Mode (Luxury Night) */
+  --bg-dark: #0F0F0E;
+  /* Negro profundo, más premium */
+  --bg-dark-sec: #181816;
+  --text-dark: #F2F2EA;
+  /* Blanco hueso muy claro */
+  --text-dark-muted: #A0A09A;
+  --card-dark: #1E1E1C;
+  --glass-dark: rgba(15, 15, 14, 0.85);
+  --glass-border-dark: rgba(255, 255, 255, 0.08);
+
+  /* UI Tokens */
+  --radius-xl: 32px;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --shadow-warm: 0 20px 40px -10px rgba(166, 124, 82, 0.15);
+  --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+
+  /* Typography - Unified */
+  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-main: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  /* Offset para el navbar fixed */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
