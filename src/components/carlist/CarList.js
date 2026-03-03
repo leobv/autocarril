@@ -6,7 +6,8 @@ function CarList() {
       description: "Citroën Berlingo 1.6 Xtr 110cv Am54",
       price: "$ 23.699.000",
       brand: "Citroën",
-      model: "Berlingo"
+      model: "Berlingo",
+      type: "Utilitario"
     },
     {
       index: 1,
@@ -14,7 +15,8 @@ function CarList() {
       description: "Peugeot 2008 1.6 Thp Sport",
       price: "$ 19.969.900",
       brand: "Peugeot",
-      model: "2008"
+      model: "2008",
+      type: "SUV"
     },
     {
       index: 2,
@@ -22,7 +24,8 @@ function CarList() {
       description: "Honda Hr-v 1.8 Ex 2wd Cvt",
       price: "US$ 15.898",
       brand: "Honda",
-      model: "Hr-v"
+      model: "Hr-v",
+      type: "SUV"
     },
     {
       index: 3,
@@ -30,7 +33,8 @@ function CarList() {
       description: "Fiat Mobi 1.0 Way",
       price: "$ 14.689.900",
       brand: "Fiat",
-      model: "Mobi"
+      model: "Mobi",
+      type: "Hatchback"
     },
     {
       index: 4,
@@ -38,7 +42,8 @@ function CarList() {
       description: "Peugeot 308 1.6 Cc Thp 156cv",
       price: "$ 20.779.900",
       brand: "Peugeot",
-      model: "308"
+      model: "308",
+      type: "Hatchback"
     },
     {
       index: 5,
@@ -46,7 +51,8 @@ function CarList() {
       description: "Honda Wr-v 1.5 Ex Cvt 120cv",
       price: "$ 26.489.900",
       brand: "Honda",
-      model: "Wr-v"
+      model: "Wr-v",
+      type: "SUV"
     },
     {
       index: 6,
@@ -54,7 +60,8 @@ function CarList() {
       description: "Volkswagen Amarok 2.0 Cd Tdi 140cv Trendline",
       price: "$ 38.699.000",
       brand: "Volkswagen",
-      model: "Amarok"
+      model: "Amarok",
+      type: "Pickup"
     },
     {
       index: 7,
@@ -62,7 +69,8 @@ function CarList() {
       description: "Fiat Palio 1.4 Nuevo Attractive Pack Top 85cv",
       price: "$ 12.849.900",
       brand: "Fiat",
-      model: "Palio"
+      model: "Palio",
+      type: "Hatchback"
     },
     {
       index: 8,
@@ -70,7 +78,8 @@ function CarList() {
       description: "Volkswagen Up! 1.0 High Up! 75cv 3 P",
       price: "$ 13.480.000",
       brand: "Volkswagen",
-      model: "Up!"
+      model: "Up!",
+      type: "Hatchback"
     },
     {
       index: 9,
@@ -78,7 +87,8 @@ function CarList() {
       description: "Fiat Siena 1.4 El Pack Attractive",
       price: "$ 10.989.900",
       brand: "Fiat",
-      model: "Siena"
+      model: "Siena",
+      type: "Sedan"
     },
     {
       index: 10,
@@ -86,7 +96,8 @@ function CarList() {
       description: "Toyota Corolla Cross 1.8 Seg Ecvt",
       price: "$ 47.699.900",
       brand: "Toyota",
-      model: "Corolla Cross"
+      model: "Corolla Cross",
+      type: "SUV"
     },
     {
       index: 11,
@@ -94,7 +105,8 @@ function CarList() {
       description: "Peugeot 308 1.6 Allure Hdi 115cv",
       price: "$ 17.490.000",
       brand: "Peugeot",
-      model: "308"
+      model: "308",
+      type: "Hatchback"
     },
     {
       index: 12,
@@ -102,7 +114,8 @@ function CarList() {
       description: "Citroën C3 Aircross 1.6 Vti 115 Tendance",
       price: "$ 13.489.990",
       brand: "Citroën",
-      model: "C3 Aircross"
+      model: "C3 Aircross",
+      type: "SUV"
     },
     {
       index: 13,
@@ -110,7 +123,8 @@ function CarList() {
       description: "Fiat Cronos 1.8 16v Precision",
       price: "$ 20.950.000",
       brand: "Fiat",
-      model: "Cronos"
+      model: "Cronos",
+      type: "Sedan"
     },
     {
       index: 14,
@@ -118,7 +132,8 @@ function CarList() {
       description: "Fiat Toro 2.0 16v Multijet Freedom 4x4 At9",
       price: "$ 28.590.000",
       brand: "Fiat",
-      model: "Toro"
+      model: "Toro",
+      type: "Pickup"
     },
     {
       index: 15,
@@ -126,7 +141,8 @@ function CarList() {
       description: "Fiat Toro 1.8 Freedom 4x2 At",
       price: "$ 24.799.900",
       brand: "Fiat",
-      model: "Toro"
+      model: "Toro",
+      type: "Pickup"
     },
     {
       index: 16,
@@ -134,7 +150,8 @@ function CarList() {
       description: "Ford Bronco Sport 2.0 4wd Wildtrak At8",
       price: "US$ 36.890",
       brand: "Ford",
-      model: "Bronco Sport"
+      model: "Bronco Sport",
+      type: "SUV"
     },
     {
       index: 17,
@@ -142,7 +159,8 @@ function CarList() {
       description: "Chevrolet Tracker 1.8 Ltz Fwd Mt 140cv",
       price: "$ 15.780.000",
       brand: "Chevrolet",
-      model: "Tracker"
+      model: "Tracker",
+      type: "SUV"
     },
     {
       index: 18,
@@ -150,7 +168,8 @@ function CarList() {
       description: "Volkswagen Gol Trend 1.6 Comfortline 101cv",
       price: "$ 15.599.900",
       brand: "Volkswagen",
-      model: "Gol Trend"
+      model: "Gol Trend",
+      type: "Hatchback"
     }
   ];
 }

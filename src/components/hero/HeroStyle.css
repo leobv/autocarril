@@ -183,12 +183,26 @@
 
 /* --- PART 2: MERGED ABOUT STYLES --- */
 .hero-about-section {
-    padding: 8rem 2rem;
     background-color: var(--bg-light);
     /* Seamless transition if body is same, or contrast if desired */
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+    /* Important for Framer Motion height animation */
+}
+
+.hero-about-section.expanded {
+    padding: 6rem 2rem 4rem 2rem;
+}
+
+.hero-container-reduced {
+    height: 70vh !important;
+    min-height: 500px !important;
+}
+
+.hero-container {
+    transition: height 0.5s ease-in-out, min-height 0.5s ease-in-out;
 }
 
 /* Copied/Adapted from AboutStyle.css */

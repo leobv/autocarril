@@ -56,7 +56,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} AutoCarril. Todos los derechos reservados.</p>
-                <p className="credits">Desarrollado con ❤️ por Agentic AI</p>
+                <p className="credits">Desarrollado por Leandro Bevilacqua</p>
             </div>
         </footer>
     );

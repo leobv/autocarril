@@ -17,9 +17,9 @@
 
 /* Col 1: Brand */
 .footer-logo {
-    max-height: 40px;
-    filter: brightness(0) invert(1);
-    /* Make logo white if it's black */
+    max-height: 80px;
+    /* Aumentamos el tamaño máximo para que se vea mejor el logo original */
+    /* filter: brightness(0) invert(1); -> REMOVED: User wants the original logo colors */
     margin-bottom: 1.5rem;
     opacity: 0.9;
 }
