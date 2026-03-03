@@ -61,7 +61,8 @@ const Hero = () => {
                     </motion.div>
                 </div>
 
-                <motion.div
+                <motion.a
+                    href="#nosotros"
                     className="scroll-indicator"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -69,11 +70,11 @@ const Hero = () => {
                 >
                     <span className="scroll-text">Descubre Más</span>
                     <ChevronDown size={24} className="bounce-icon" />
-                </motion.div>
+                </motion.a>
             </div>
 
             {/* PART 2: Merged "About" Content (Seamless Flow) */}
-            <div className="hero-about-section">
+            <div className="hero-about-section" id="nosotros">
                 <div className="about-wrapper centered-layout">
                     <div className="about-text-column centered-content">
                         <h3 className="section-label">SOBRE NOSOTROS</h3>

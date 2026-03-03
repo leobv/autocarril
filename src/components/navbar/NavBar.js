@@ -28,8 +28,17 @@ function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="navbar-container">
-        <a href="#inicio" style={{ display: 'flex', alignItems: 'center', zIndex: 1001 }}>
-          <img src={logo} alt="Auto Carril" id="logo-img" />
+        <a href="#inicio" className="logo-container" style={{ zIndex: 1001 }}>
+          <div className="logo-icon-wrapper">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide-car">
+              <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a2 2 0 0 0-1.6-.8H9.3a2 2 0 0 0-1.6.8L5 11l-5.16.86a1 1 0 0 0-.84.99V16h3" />
+              <circle cx="6.5" cy="16.5" r="2.5" />
+              <circle cx="17.5" cy="16.5" r="2.5" />
+            </svg>
+          </div>
+          <div className="logo-text-wrapper">
+            <span className="logo-text-auto">Auto</span><span className="logo-text-carril">Carril</span>
+          </div>
         </a>
 
         {/* Desktop Menu */}
