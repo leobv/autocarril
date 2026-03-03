@@ -1,15 +1,17 @@
 // App.js
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { motion } from 'framer-motion';
 import DarkModeContext from './context/DarkModeContext';
 import Navbar from './components/navbar/NavBar';
 import Hero from './components/hero/Hero';
-// About is now integrated in Hero
-import CarGallery from './components/CarGallery/CarGallery';
-import Contact from './components/contact/Contact';
+import About from './components/about/About';
 import Footer from './components/footer/Footer';
 import FloatingWhatsApp from './components/floating/FloatingWhatsApp';
 import './App.css';
+
+// Lazy loaded heavy components
+const CarGallery = lazy(() => import('./components/CarGallery/CarGallery'));
+const Contact = lazy(() => import('./components/contact/Contact'));
 
 // Animation variants for Scroll Reveal
 const sectionVariants = {
@@ -22,7 +24,7 @@ const sectionVariants = {
 };
 
 const Section = ({ id, children, className = "" }) => (
-  <motion.div
+  <motion.section
     id={id}
     className={`section-wrapper ${className}`}
     initial="hidden"
@@ -31,7 +33,7 @@ const Section = ({ id, children, className = "" }) => (
     variants={sectionVariants}
   >
     {children}
-  </motion.div>
+  </motion.section>
 );
 
 function App() {
@@ -39,24 +41,28 @@ function App() {
 
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
-      <div className={`container ${darkMode ? 'dark-mode-wrapper' : ''}`}>
+      <main className={`container ${darkMode ? 'dark-mode-wrapper' : ''}`}>
         <Navbar />
 
-        <Hero /> {/* Compound Hero (Includes About) */}
+        <Hero />
 
-        {/* 'nosotros' is now part of Hero, so we jump to Fleet */}
-
-        <Section id="flota">
-          <CarGallery />
+        <Section id="nosotros">
+          <About />
         </Section>
 
-        <Section id="contacto">
-          <Contact />
-        </Section>
+        <Suspense fallback={<div style={{ textAlign: 'center', padding: '5rem', color: 'var(--text-muted)' }}>Cargando interfaz...</div>}>
+          <Section id="flota">
+            <CarGallery />
+          </Section>
 
-        <Footer /> {/* New Footer */}
-        <FloatingWhatsApp /> {/* Quick Action */}
-      </div>
+          <Section id="contacto">
+            <Contact />
+          </Section>
+        </Suspense>
+
+        <Footer />
+        <FloatingWhatsApp />
+      </main>
     </DarkModeContext.Provider>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 import './ContactStyle.css';
 
 import { useState } from 'react';
@@ -18,7 +18,9 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Gracias ${formData.name}, hemos recibido tu mensaje. Nos pondremos en contacto pronto.`);
+    const text = `Hola AutoCarril, soy *${formData.name}*.%0A%0A📱 *Teléfono:* ${formData.phone}%0A✉️ *Email:* ${formData.email || 'N/A'}%0A%0A💬 *Consulta:*%0A${formData.message}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=541139359902&text=${text}`;
+    window.open(whatsappUrl, '_blank');
     setFormData({ name: '', phone: '', email: '', message: '' });
   };
 

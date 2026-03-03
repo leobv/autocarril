@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
 import './NavBarStyle.css';
-import logo from '../../images/logo.png';
 import DarkModeContext from "../../context/DarkModeContext"
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Instagram, Phone, Moon, Sun } from 'lucide-react';
@@ -11,11 +10,19 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let timeoutId = null;
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (timeoutId) return;
+      timeoutId = setTimeout(() => {
+        setScrolled(window.scrollY > 50);
+        timeoutId = null;
+      }, 100);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
