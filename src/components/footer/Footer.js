@@ -10,7 +10,7 @@ const Footer = () => {
 
                 {/* Column 1: Brand */}
                 <div className="footer-col brand-col">
-                    <img src={logo} alt="AutoCarril" className="footer-logo" />
+                    <img src={logo} alt="Autocarril" className="footer-logo" />
                     <p className="footer-slogan">
                         30 años conectando destinos y cumpliendo sueños sobre ruedas. Calidad y confianza garantizada.
                     </p>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#flota">Nuestra Flota</a></li>
+                        <li><a href="#flota">Nuestros Autos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} AutoCarril. Todos los derechos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} Autocarril. Todos los derechos reservados.</p>
                 <p className="credits">Desarrollado por Leandro Bevilacqua</p>
             </div>
         </footer>

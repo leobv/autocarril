@@ -19,7 +19,7 @@ function CarCarousel() {
 
   return (
     <div className="carousel-container-inner">
-      <h2 className="section-title">Nuestra Flota</h2>
+      <h2 className="section-title">Nuestros Autos</h2>
       <Swiper
         modules={[Pagination, Autoplay, A11y, Navigation]}
         spaceBetween={30}

@@ -52,7 +52,7 @@ function Navbar() {
         <ul className="nav-menu desktop-menu">
           <li><a href="#inicio" className="nav-link-item">Inicio</a></li>
           <li><a href="#nosotros" className="nav-link-item">Nosotros</a></li>
-          <li><a href="#flota" className="nav-link-item">Nuestra Flota</a></li>
+          <li><a href="#flota" className="nav-link-item">Nuestros Autos</a></li>
           <li><a href="#contacto" className="nav-link-item">Contacto</a></li>
         </ul>
 
@@ -89,7 +89,7 @@ function Navbar() {
             <ul className="mobile-nav-list">
               <li><a href="#inicio" onClick={toggleMenu}>Inicio</a></li>
               <li><a href="#nosotros" onClick={toggleMenu}>Nosotros</a></li>
-              <li><a href="#flota" onClick={toggleMenu}>Nuestra Flota</a></li>
+              <li><a href="#flota" onClick={toggleMenu}>Nuestros Autos</a></li>
               <li><a href="#contacto" onClick={toggleMenu}>Contacto</a></li>
             </ul>
           </motion.div>

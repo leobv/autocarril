@@ -18,7 +18,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `Hola AutoCarril, soy *${formData.name}*.%0A%0A📱 *Teléfono:* ${formData.phone}%0A✉️ *Email:* ${formData.email || 'N/A'}%0A%0A💬 *Consulta:*%0A${formData.message}`;
+    const text = `Hola Autocarril, soy *${formData.name}*.%0A%0A📱 *Teléfono:* ${formData.phone}%0A✉️ *Email:* ${formData.email || 'N/A'}%0A%0A💬 *Consulta:*%0A${formData.message}`;
     const whatsappUrl = `https://api.whatsapp.com/send?phone=541139359902&text=${text}`;
     window.open(whatsappUrl, '_blank');
     setFormData({ name: '', phone: '', email: '', message: '' });
@@ -34,7 +34,7 @@ function Contact() {
       {/* Top Section: Full Width Map */}
       <div className="map-premium-container">
         <iframe
-          title='Ubicación AutoCarril'
+          title='Ubicación Autocarril'
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7576615515545!2d-58.49154068574255!3d-34.58499798046428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6410d91a01f%3A0x38892b05b59210!2sAutocarril%20M%C3%B3viles!5e0!3m2!1ses-419!2sar!4v1589398479246!5m2!1ses-419!2sar"
           allowFullScreen=""
           loading="lazy"
@@ -83,7 +83,7 @@ function Contact() {
               <div>
                 <h4>Horarios de Atención</h4>
                 <p>Lunes a Viernes: 9:00 hs - 18:00 hs</p>
-                <p>Sábados: 9:00 hs - 13:00 hs</p>
+                <p>Sábados: 10:00 hs - 15:00 hs</p>
               </div>
             </div>
           </div>

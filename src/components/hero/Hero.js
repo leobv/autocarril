@@ -51,7 +51,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.8 }}
                     >
                         <a href="#flota" className="hero-btn-primary">
-                            Ver Flota
+                            Ver Autos
                         </a>
                         <a href="#contacto" className="hero-btn-secondary">
                             Contáctanos

@@ -45,7 +45,7 @@ function About() {
               <h2 className="about-title-main">30 Años Conectando Destinos</h2>
               <div className="about-description">
                 <p>
-                  AutoCarril Móviles nace con una misión clara: redefinir la experiencia de adquirir tu próximo vehículo.
+                  Autocarril Móviles nace con una misión clara: redefinir la experiencia de adquirir tu próximo vehículo.
                   Con más de tres décadas de trayectoria, hemos consolidado un legado basado en la confianza,
                   la transparencia y el compromiso absoluto con nuestros clientes.
                 </p>
@@ -56,7 +56,7 @@ function About() {
                 </p>
               </div>
               <div className="about-signature">
-                <span>AutoCarril Team</span>
+                <span>Autocarril Team</span>
               </div>
             </div>
           </motion.div>
