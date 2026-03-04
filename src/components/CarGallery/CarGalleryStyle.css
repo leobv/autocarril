@@ -16,7 +16,6 @@
 /* Filters */
 .search-input-wrapper {
     position: relative;
-    flex-grow: 1;
     width: 100%;
 }
 
@@ -35,7 +34,8 @@
 
 .search-input {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+
     padding: 0.8rem 1rem 0.8rem 3rem;
     border-radius: 30px;
     border: 1px solid var(--border-color, #e2e8f0);
@@ -245,10 +245,15 @@
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: 1fr;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .gallery-filters {
         padding: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        width: calc(100% - 1rem);
     }
 }
 
