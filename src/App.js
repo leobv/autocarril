@@ -1,6 +1,5 @@
 // App.js
 import React, { useState, Suspense, lazy } from 'react';
-import { motion } from 'framer-motion';
 import DarkModeContext from './context/DarkModeContext';
 import Navbar from './components/navbar/NavBar';
 import Hero from './components/hero/Hero';
@@ -13,27 +12,13 @@ import './App.css';
 const CarGallery = lazy(() => import('./components/CarGallery/CarGallery'));
 const Contact = lazy(() => import('./components/contact/Contact'));
 
-// Animation variants for Scroll Reveal
-const sectionVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: "easeOut" }
-  }
-};
-
 const Section = ({ id, children, className = "" }) => (
-  <motion.section
+  <section
     id={id}
     className={`section-wrapper ${className}`}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.2 }} // Animate once when 20% visible
-    variants={sectionVariants}
   >
     {children}
-  </motion.section>
+  </section>
 );
 
 function App() {
