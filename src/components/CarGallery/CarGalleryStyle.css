@@ -242,6 +242,16 @@
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-filters {
+        padding: 1rem;
+    }
+}
+
 /* Gallery Item */
 .gallery-item {
     background-color: var(--card-light);

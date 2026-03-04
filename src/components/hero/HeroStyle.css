@@ -160,6 +160,11 @@
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+    .hero-container {
+        height: 100vh;
+        min-height: 500px;
+    }
+
     .hero-bg {
         background-attachment: scroll;
     }
