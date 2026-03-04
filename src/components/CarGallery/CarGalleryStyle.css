@@ -244,7 +244,9 @@
 
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
@@ -286,11 +288,16 @@
 
 .gallery-image-container {
     position: relative;
-    aspect-ratio: 16/9;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 safe fallback for older iOS Safari that ignores aspect-ratio */
     overflow: hidden;
 }
 
 .gallery-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
