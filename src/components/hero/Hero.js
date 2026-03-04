@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './HeroStyle.css';
-import bgImage from '../../images/autocarril1.png'; // Switched to car image
+import bgImage from '../../images/autocarril1.webp'; // Optimized image format
 
 const Hero = () => {
     return (
