@@ -1,33 +1,12 @@
 import React from 'react';
 import { Tag } from 'lucide-react';
-import { motion } from 'framer-motion';
-
-const itemVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-        opacity: 1,
-        scale: 1,
-        transition: {
-            duration: 0.4,
-            ease: "easeOut"
-        }
-    }
-};
 
 const CarCard = ({ car, onClick }) => {
     return (
-        <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+        <div
             className="gallery-item-wrapper"
-            whileHover={{
-                y: -10,
-                boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)",
-                transition: { duration: 0.3 }
-            }}
             onClick={() => onClick(car)}
+            style={{ animation: 'fadeIn 0.5s ease-out' }}
         >
             <div className="gallery-item">
                 <div className="gallery-image-container">
@@ -59,7 +38,7 @@ const CarCard = ({ car, onClick }) => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

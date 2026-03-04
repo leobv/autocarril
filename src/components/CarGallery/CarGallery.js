@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { AnimatePresence } from 'framer-motion';
 import useCars from '../../hooks/useCars';
 import CarCard from './CarCard';
 import CarFilterBar from './CarFilterBar';
@@ -98,11 +97,9 @@ const CarGallery = () => {
 
             {/* Gallery Grid */}
             <div className="gallery-grid">
-                <AnimatePresence>
-                    {displayedCars.map((car) => (
-                        <CarCard key={car.id} car={car} onClick={handleCarClick} />
-                    ))}
-                </AnimatePresence>
+                {displayedCars.map((car) => (
+                    <CarCard key={car.id} car={car} onClick={handleCarClick} />
+                ))}
             </div>
 
             {/* Empty State Feedback */}
