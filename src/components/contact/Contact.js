@@ -62,7 +62,7 @@ function Contact() {
               </div>
               <div>
                 <h4>Dirección</h4>
-                <p>Av. Ejemplo 1234, Ciudad de Buenos Aires</p>
+                <p>Av. Salvador María del Carril 2131, C1419GZA Cdad. Autónoma de Buenos Aires</p>
               </div>
             </div>
 

@@ -40,7 +40,7 @@ const Footer = () => {
                     <h3>Contacto</h3>
                     <div className="contact-row">
                         <MapPin size={20} className="footer-icon" />
-                        <span>Av. Ejemplo 1234, Buenos Aires</span>
+                        <span>Av. Salvador M. del Carril 2131, CABA</span>
                     </div>
                     <div className="contact-row">
                         <Phone size={20} className="footer-icon" />
